@@ -4,42 +4,51 @@
     <link media="all" rel="stylesheet" href="./css/main.css" />
     <meta name="description" content="The world's very first instant forum." />
     <title>Jaxboards - The free AJAX powered forum host</title>
+    <script>
+      addEventListener("DOMContentLoaded", (event) => {
+        if (document.getElementById("year")) {
+          document.getElementById("year").innerHTML = new Date().getFullYear();
+        }
+      });
+    </script>
   </head>
   <body onload="if(top.location!=self.location) top.location=self.location">
     <div id="container">
-      <div id="logo"><a href="https://jaxboards.com">&nbsp;</a></div>
+      <div id="logo"><a href="https://jaxboards.github.io">&nbsp;</a></div>
       <div id="bar">
-        <a href="https://support.jaxboards.com" class="support">
-          Support Forum
-        </a>
-        <a href="https://test.jaxboards.com" class="test"> Test Forum </a>
-        <a href="https://support.jaxboards.com" class="resource"> Resources </a>
       </div>
       <div id="content">
         <div class="box">
           <div class="content">
-            <strong
-              ><font color="red"
-                >New forum registration is shut down until further notice.</font
-              ></strong
-            ><br />
-            <strong
-              >So, you want a community. You've come to the right place.</strong
-            >
-            <br /><br />
-            JaxBoards has been built from the ground up: utilizing feedback from
-            members and forum gurus along the way to create the world's first
-            real-time, AJAX-powered forum - the first bulletin board software to
-            utilize modern technology to make each user's experience as easy and
-            as enjoyable as possible.
-            <br clear="all" />
+            <p>
+              Jaxboards is PHP/MySQL forum software and is semi-regularly
+              maintained.
+            </p>
+            <p>
+              It's pretty full-featured and offers a unique experience when
+              compared to other forum software, even today.
+            </p>
+            </p>
+              It delivers outstanding performance and creating themes is
+              relatively easy.
+            </p>
+            <p>
+               Follow development on <a
+                 href="https://github.com/jaxboards/jaxboards">GitHub</a>
+            </p>
+            <p>
+              Check out a real-world use case on the <a
+                href="https://forums.bibbyteam.com/">Bibby Team forums</a>
+            </p>
           </div>
         </div>
         <div class="box mini box1">
           <div class="title">Customizable</div>
           <div class="content">
-            Jaxboards offers entirely new ways to make your forum look exactly
-            the way you want:
+            <p>
+              Jaxboards offers entirely new ways to make your forum look exactly
+              the way you want:
+            </p>
             <ul>
               <li>Easy CSS</li>
               <li>Template access</li>
@@ -49,23 +58,28 @@
         <div class="box mini box2">
           <div class="title">Stable &amp; Secure</div>
           <div class="content">
-            Jaxboards maintains the highest standards of efficient, optimized
-            software that can handle anything you throw at it, and a support
-            forum that will back you up 100%.
+            <p>
+              Jaxboards maintains the highest standards of efficient, optimized
+              software that can handle anything you throw at it.
+            </p>
           </div>
         </div>
         <div class="box mini box3">
           <div class="title">Real Time!</div>
           <div class="content">
+            <p>
             In an age where communication is becoming ever more terse, we know
             how valuable you and your members' time is. Everything that is
-            posted, messaged, or shared shows up instantly on the screen.<br /><br />
+            posted, messaged, or shared shows up instantly on the screen.
+            </p>
+            <p>
             Save your refresh button.
+            </p>
           </div>
         </div>
         <br clear="all" />
       </div>
     </div>
-    <div id="copyright">JaxBoards &copy; 2007-, All Rights Reserved</div>
+    <div id="copyright">JaxBoards &copy; 2007-<span id="year">Today</span>, All Rights Reserved</div>
   </body>
 </html>
