@@ -88,8 +88,7 @@ body {
 }
 
 .box.mini {
-  width: 31%;
-  float: left;
+  flex: 1;
 }
 
 .box .content {
@@ -179,4 +178,8 @@ footer {
 
 .center {
   text-align: center;
+}
+
+.flex {
+  display: flex;
 }
