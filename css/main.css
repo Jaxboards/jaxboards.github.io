@@ -166,6 +166,10 @@ ul {
   margin-bottom: 10px;
 }
 
+footer {
+  clear: both;
+}
+
 #copyright {
   text-align: center;
   color: #fff;
