@@ -1,0 +1,18 @@
+# EditorConfig:
+# - http://EditorConfig.org
+# - https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+
+# Some defaults for every file
+# based on prettier https://prettier.io/docs/configuration#editorconfig
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+max_line_length = 80
+trim_trailing_whitespace = true
+
+# 72 is a decent limit for reading text
+[*.md,gitcommit,*.txt]
+max_line_length = 72
